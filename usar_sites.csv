@@ -1,15 +1,120 @@
-organization,exercise name,country,address,google maps link,event link,lat,lon
-N/A,Place d'armes de Genève,Switzerland,"1227 Carouge, Switzerland",https://maps.app.goo.gl/oPoFWjSG63qTvoQ89,https://www.vtg.admin.ch/fr/places-d-arme-geneve,46.1829674,6.1378539
-Abu Dhabi Civil Defense Authority,Al Shelaylah Training Site,United Arab Emirates,,https://www.google.com/maps/search/?api=1&query=JMJ7%2BHV5%20Al%20Sader%20Abu%20Dhabi,N/A,,
-FRA01 POMPIERS DE L'URGENCE INTERNATIONALE,La Souterraine,France,,"https://www.google.com/maps/place/4+Av.+Mermoz,+23300+La+Souterraine,+France",N/A,,
-Emergency Services Academy,USAR Rubble Pad,Pakistan,,https://www.google.com/maps/search/?api=1&query=31%C2%B028'17.1%22N%2074%C2%B013'31.6%22E,https://www.rescue.gov.pk/Academy.aspx,,
-Singapore Civil Defence Force (SCDF),Home Team Tactical Centre (HTTC),Singapore,,https://maps.app.goo.gl/XcYs45g9adtZyDL6A,https://www.scdf.gov.sg,,
-National Fire Agency of the Republic of Korea,National Rescue Headquarters,Republic of Korea,,"https://www.google.com/maps/place/1+Gujiseo-ro+20beon-gil,+Nam-gu,+Ulsan",https://www.rescue.go.kr/main/main.do,,
-Capital Emergency Service Islamabad,CDA Emergency & Disaster Management Academy and Training Centre,Pakistan,,https://share.google/tGw8JXaJPFDtjIC10,N/A,,
-Capita The Fire Service College,Capita Fire Service College,United Kingdom,,https://www.google.com/maps/place/Fire+Service+College,https://www.fireservicecollege.ac.uk/,,
-TCRH Training Center Retten und Helfen GmH,TCRH Training Center Rescue & Help,Germany,,https://goo.gl/maps/92zGyog5As9Ltxsz7,https://www.tcrh.de,,
-General Inspectorate for Emergency Situations,Training ground for life-saving techniques,Romania,,https://www.google.com/maps/search/?api=1&query=44.710300%2C26.091298,https://igsu.ro,,
-BRH Bundesverband Rettungshunde e.V.,TCRH Malchin,Germany,,https://maps.app.goo.gl/dJxgUDK4wLLnZh646,www.bundesverband-rettungshunde.de,,
-Test,Test event,Panama,,#,#,,
-test 2,test event 2,United States,"405 E 45th St, New York, NY 10017, United States",#,#,40.7492977,-73.9679415
-Geneva test,Geneva test,Switzerland,"Av. de la Paix 8-14, 1211 Genève, Switzerland",#,#,46.2277242,6.141967
+organization,exercise name,country,address,google maps link,more info link,lat,lon
+N/A,Place d'armes de Genève,Switzerland,"1227 Carouge, Switzerland",https://maps.app.goo.gl/oPoFWjSG63qTvoQ89,https://www.vtg.admin.ch/fr/places-d-arme-geneve,#NAME?,#NAME?
+Abu Dhabi Civil Defense Authority,Al Shelaylah Training Site,United Arab Emirates,,https://www.google.com/maps/search/?api=1&query=JMJ7%2BHV5%20Al%20Sader%20Abu%20Dhabi,N/A,#NAME?,#NAME?
+FRA01 POMPIERS DE L'URGENCE INTERNATIONALE,La Souterraine,France,,"https://www.google.com/maps/place/4+Av.+Mermoz,+23300+La+Souterraine,+France",N/A,#NAME?,#NAME?
+Emergency Services Academy,USAR Rubble Pad,Pakistan,,https://www.google.com/maps/search/?api=1&query=31%C2%B028'17.1%22N%2074%C2%B013'31.6%22E,https://www.rescue.gov.pk/Academy.aspx,#NAME?,#NAME?
+Singapore Civil Defence Force (SCDF),Home Team Tactical Centre (HTTC),Singapore,,https://maps.app.goo.gl/XcYs45g9adtZyDL6A,https://www.scdf.gov.sg,#NAME?,#NAME?
+National Fire Agency of the Republic of Korea,National Rescue Headquarters,Republic of Korea,,"https://www.google.com/maps/place/1+Gujiseo-ro+20beon-gil,+Nam-gu,+Ulsan",https://www.rescue.go.kr/main/main.do,#NAME?,#NAME?
+Capital Emergency Service Islamabad,CDA Emergency & Disaster Management Academy and Training Centre,Pakistan,,https://share.google/tGw8JXaJPFDtjIC10,N/A,#NAME?,#NAME?
+Capita The Fire Service College,Capita Fire Service College,United Kingdom,,https://www.google.com/maps/place/Fire+Service+College,https://www.fireservicecollege.ac.uk/,#NAME?,#NAME?
+TCRH Training Center Retten und Helfen GmH,TCRH Training Center Rescue & Help,Germany,,https://goo.gl/maps/92zGyog5As9Ltxsz7,https://www.tcrh.de,#NAME?,#NAME?
+General Inspectorate for Emergency Situations,Training ground for life-saving techniques,Romania,,https://www.google.com/maps/search/?api=1&query=44.710300%2C26.091298,https://igsu.ro,#NAME?,#NAME?
+BRH Bundesverband Rettungshunde e.V.,TCRH Malchin,Germany,,https://maps.app.goo.gl/dJxgUDK4wLLnZh646,www.bundesverband-rettungshunde.de,#NAME?,#NAME?
+Test,Test event,Panama,,#,#,#NAME?,#NAME?
+test 2,test event 2,United States,"405 E 45th St, New York, NY 10017, United States",#,#,#NAME?,#NAME?
+Geneva test,Geneva test,Switzerland,"Av. de la Paix 8-14, 1211 Genève, Switzerland",#,#,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,#NAME?
+,,,,,,#NAME?,
+,,,,,,#NAME?,
+,,,,,,#NAME?,
+,,,,,,#NAME?,
+,,,,,,#NAME?,
+,,,,,,#NAME?,
+,,,,,,#NAME?,
+,,,,,,#NAME?,
+,,,,,,#NAME?,
+,,,,,,#NAME?,
+,,,,,,#NAME?,
+,,,,,,#NAME?,
+,,,,,,#NAME?,
+,,,,,,#NAME?,
+,,,,,,#NAME?,
