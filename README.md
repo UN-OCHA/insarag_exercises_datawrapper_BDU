@@ -12,7 +12,8 @@ The Datawrapper map using this dataset is available here:
 https://datawrapper.dwcdn.net/dB45i/5/
 
 ## Data source
-The dataset is synced from a Google Sheet using a scheduled GitHub Action.
+The dataset is synced from a Google Sheet (updated by INSARAG colleagues) using a scheduled GitHub Action.
+https://docs.google.com/spreadsheets/d/1MGRNFfmDHl9ZRDEMG_-GVYWvX4KuAQQcjnEnLD16_RQ/edit?usp=sharing
 
 ## Owning unit
 OCHA Communications Branch (CB)  
