@@ -21,3 +21,77 @@ Brand and Design Unit (BDU)
 
 ## Contact
 ochavisual@un.org
+
+
+---
+Geocoding in Google Sheets
+
+**Purpose:** Convert addresses in **Column D** into **latitude (G)** and **longitude (H)** using a custom Apps Script function.
+
+---
+
+## ✅ Script Used
+
+```javascript
+/**
+ * GEOCODE: Converts an address into [latitude, longitude].
+ * Usage:
+ *   =INDEX(GEOCODE(D2),1)   // latitude
+ *   =INDEX(GEOCODE(D2),2)   // longitude
+ */
+function GEOCODE(address) {
+  if (!address) return ["",""];
+  try {
+    var res = Maps.newGeocoder().setLanguage('en').geocode(address);
+    if (res && res.status === 'OK' && res.results && res.results.length > 0) {
+      var loc = res.results[0].geometry.location;
+      return [loc.lat, loc.lng]; // vertical array
+    }
+    return ["",""];
+  } catch (e) {
+    return ["",""];
+  }
+}
+```
+
+---
+
+## ✅ How to Use
+
+- **Address column:** `D`
+- **Latitude column:** `G`
+- **Longitude column:** `H`
+
+Formulas:
+```gs
+=INDEX(GEOCODE(D2),1)   // in G2
+=INDEX(GEOCODE(D2),2)   // in H2
+```
+Drag down for all rows.
+
+---
+
+## ✅ Address Format
+
+Include:
+- Street + number
+- Postal code
+- City
+- Country
+
+**Example:**  
+`Av. de la Paix 8-14, 1211 Genève, Switzerland`
+
+Add a **comment on D1**:
+```
+Please enter full address: street + number, postal code, city, country.
+Example: Av. de la Paix 8-14, 1211 Genève, Switzerland
+```
+
+---
+
+## ✅ Notes
+
+- First-time users must **authorize** the script.
+- Quotas apply (Apps Script Maps service).
+- After filling lat/lon, use **Paste special → Values** to freeze results.
