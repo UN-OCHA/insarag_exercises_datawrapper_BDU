@@ -1,5 +1,5 @@
 organization,exercise name,country,address,google maps link,more info link,lat,lon
-N/A,Place d'armes de Genève,Switzerland,"1227 Carouge, Switzerland",https://maps.app.goo.gl/oPoFWjSG63qTvoQ89,https://www.vtg.admin.ch/fr/places-d-arme-geneve,#NAME?,#NAME?
+N/A,Place d'armes de Genève,Switzerland,"1227 Carouge, Switzerland",https://maps.app.goo.gl/oPoFWjSG63qTvoQ89,https://www.vtg.admin.ch/fr/places-d-arme-geneve,46.182967,6.137854
 Abu Dhabi Civil Defense Authority,Al Shelaylah Training Site,United Arab Emirates,,https://www.google.com/maps/search/?api=1&query=JMJ7%2BHV5%20Al%20Sader%20Abu%20Dhabi,N/A,#NAME?,#NAME?
 FRA01 POMPIERS DE L'URGENCE INTERNATIONALE,La Souterraine,France,,"https://www.google.com/maps/place/4+Av.+Mermoz,+23300+La+Souterraine,+France",N/A,#NAME?,#NAME?
 Emergency Services Academy,USAR Rubble Pad,Pakistan,,https://www.google.com/maps/search/?api=1&query=31%C2%B028'17.1%22N%2074%C2%B013'31.6%22E,https://www.rescue.gov.pk/Academy.aspx,#NAME?,#NAME?
@@ -11,8 +11,8 @@ TCRH Training Center Retten und Helfen GmH,TCRH Training Center Rescue & Help,Ge
 General Inspectorate for Emergency Situations,Training ground for life-saving techniques,Romania,,https://www.google.com/maps/search/?api=1&query=44.710300%2C26.091298,https://igsu.ro,#NAME?,#NAME?
 BRH Bundesverband Rettungshunde e.V.,TCRH Malchin,Germany,,https://maps.app.goo.gl/dJxgUDK4wLLnZh646,www.bundesverband-rettungshunde.de,#NAME?,#NAME?
 Test,Test event,Panama,,#,#,#NAME?,#NAME?
-test 2,test event 2,United States,"405 E 45th St, New York, NY 10017, United States",#,#,#NAME?,#NAME?
-Geneva test,Geneva test,Switzerland,"Av. de la Paix 8-14, 1211 Genève, Switzerland",#,#,#NAME?,#NAME?
+test 2,test event 2,United States,"405 E 45th St, New York, NY 10017, United States",#,#,40.749298,-73.967941
+Geneva test,Geneva test,Switzerland,"Av. de la Paix 8-14, 1211 Genève, Switzerland",#,#,46.227724,6.141967
 ,,,,,,#NAME?,#NAME?
 ,,,,,,#NAME?,#NAME?
 ,,,,,,#NAME?,#NAME?
