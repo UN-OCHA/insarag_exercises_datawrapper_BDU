@@ -1,18 +1,19 @@
 organization,exercise name,country,address,google maps link,more info link,lat,lon
-N/A,Place d'armes de Genève,Switzerland,"1227 Carouge, Switzerland",https://maps.app.goo.gl/oPoFWjSG63qTvoQ89,https://www.vtg.admin.ch/fr/places-d-arme-geneve,46.182967,6.137854
-Abu Dhabi Civil Defense Authority,Al Shelaylah Training Site,United Arab Emirates,,https://www.google.com/maps/search/?api=1&query=JMJ7%2BHV5%20Al%20Sader%20Abu%20Dhabi,N/A,#NAME?,#NAME?
-FRA01 POMPIERS DE L'URGENCE INTERNATIONALE,La Souterraine,France,,"https://www.google.com/maps/place/4+Av.+Mermoz,+23300+La+Souterraine,+France",N/A,#NAME?,#NAME?
-Emergency Services Academy,USAR Rubble Pad,Pakistan,,https://www.google.com/maps/search/?api=1&query=31%C2%B028'17.1%22N%2074%C2%B013'31.6%22E,https://www.rescue.gov.pk/Academy.aspx,#NAME?,#NAME?
-Singapore Civil Defence Force (SCDF),Home Team Tactical Centre (HTTC),Singapore,,https://maps.app.goo.gl/XcYs45g9adtZyDL6A,https://www.scdf.gov.sg,#NAME?,#NAME?
-National Fire Agency of the Republic of Korea,National Rescue Headquarters,Republic of Korea,,"https://www.google.com/maps/place/1+Gujiseo-ro+20beon-gil,+Nam-gu,+Ulsan",https://www.rescue.go.kr/main/main.do,#NAME?,#NAME?
-Capital Emergency Service Islamabad,CDA Emergency & Disaster Management Academy and Training Centre,Pakistan,,https://share.google/tGw8JXaJPFDtjIC10,N/A,#NAME?,#NAME?
-Capita The Fire Service College,Capita Fire Service College,United Kingdom,,https://www.google.com/maps/place/Fire+Service+College,https://www.fireservicecollege.ac.uk/,#NAME?,#NAME?
-TCRH Training Center Retten und Helfen GmH,TCRH Training Center Rescue & Help,Germany,,https://goo.gl/maps/92zGyog5As9Ltxsz7,https://www.tcrh.de,#NAME?,#NAME?
-General Inspectorate for Emergency Situations,Training ground for life-saving techniques,Romania,,https://www.google.com/maps/search/?api=1&query=44.710300%2C26.091298,https://igsu.ro,#NAME?,#NAME?
-BRH Bundesverband Rettungshunde e.V.,TCRH Malchin,Germany,,https://maps.app.goo.gl/dJxgUDK4wLLnZh646,www.bundesverband-rettungshunde.de,#NAME?,#NAME?
-Test,Test event,Panama,,#,#,#NAME?,#NAME?
-test 2,test event 2,United States,"405 E 45th St, New York, NY 10017, United States",#,#,40.749298,-73.967941
-Geneva test,Geneva test,Switzerland,"Av. de la Paix 8-14, 1211 Genève, Switzerland",#,#,46.227724,6.141967
+,Place d'armes de Genève,"Geneva, Swizterland","Chemin de Couchefatte, 42,  1237, Avully, Switzerland",https://maps.app.goo.gl/oPoFWjSG63qTvoQ89,https://www.vtg.admin.ch/fr/places-d-arme-geneve,46.182967,6.137854
+Abu Dhabi Civil Defense Authority,Al Shelaylah Training Site,Al Shelaylah Fire Station/ Abu Dhabi City,"JMJ7+HV5, Al Sader, Abu Dhabi, United Arab Emirates",Al Shelaylah Civil Defense Fire Station - Google Maps,None,#NAME?,#NAME?
+Pompiers de l'Urgence Internationale (PUI),La Souterraine,France,"Impasse Jehanne Crosmonot - La Souterraine, France",https://maps.app.goo.gl/ytskXTt9rxdgwK8y8,N/A,#NAME?,#NAME?
+Emergency Services Academy,USAR Rubble Pad,Pakistan,"0.5 km M2 Motorway Service lane, Thokar Niaz Baig , Lahore, Pakistan",https://maps.app.goo.gl/AjdknkU9nzhnJp7C8,https://www.rescue.gov.pk/Academy.aspx,#NAME?,#NAME?
+Singapore Civil Defence Force (SCDF),Home Team Tactical Centre (HTTC),Singapore,1 Mandai Quarry Road Singapore 728635,https://maps.app.goo.gl/XcYs45g9adtZyDL6A,https://www.scdf.gov.sg,#NAME?,#NAME?
+National Fire Agency of the Republic of Korea,National Rescue headquarters,South Korea,"1 Gujiseo-ro, Guji-myeon, Dalseong-gun, Daegu, South Korea","
+https://maps.app.goo.gl/TvhdY3HaUpJgdik29",https://www.rescue.go.kr/main/main.do,#NAME?,#NAME?
+"Capital Emergency Service, Cpital Development Authority , Islamabad",CDA Emergency & Disaster Management Academy and USAR rubble field,Pakistan,"M258+C5G, H-11, Islamabad, Pakistan",https://share.google/tGw8JXaJPFDtjIC10,Nil,#NAME?,#NAME?
+Capita The Fire Service College,Capita The Fire Service College,United Kingdom,"London Road, Gloucestershire, GL56 0RH, Moreton-in-Marsh, UK",https://maps.app.goo.gl/xEwEkjTSFiBe5vev8,https://www.fireservicecollege.ac.uk/,#NAME?,#NAME?
+TCRH Training Center Retten und Helfen GmH,TCRH Training Center Rescue & Help,Germany,"Luttenbachtalstraße 30, 74821 Mosbach, Germany",https://goo.gl/maps/92zGyog5As9Ltxsz7,https://www.tcrh.de,#NAME?,#NAME?
+General Inspectorate for Emergency Situations,The training ground for executing life-saving intervention techniques in hostile environments,Romania,"București-Ploiești Street, D.N. 1, Km. 32, Ciolpani,  Bucharest, Romania",https://maps.app.goo.gl/tnv7yaRS1QRQrkUC7,https://igsu.ro,#NAME?,#NAME?
+BRH Bundesverband Rettungshunde e.V.,TCRH Malchin,Germany,"Industriegelände 10, Germany, Mecklenburg-Vorpommern, 17139 Malchin, Germany, ",https://maps.app.goo.gl/dJxgUDK4wLLnZh646,www.bundesverband-rettungshunde.de,#NAME?,#NAME?
+Fire and Rescue New South Wales,USAR Prop,Australia,"1-5 Distribution Drive Orchard Hills NSW 2748, Sydney Australia",https://goo.gl/maps/mFqZcZTsx662,https://www.fire.nsw.gov.au/page.php?id=9286,#NAME?,#NAME?
+Cynotechnie Sapeur - Pompier France,Aire de formation internationale Cynotechnique et Sauvetage Déblaiement,France,"Chemin des Bas Villevents,VILLEJUST,  FRANCE",https://maps.app.goo.gl/bHySLnowecnw7beB6,https://share.google/uKGXOSgmruNjTc4En,40.749298,-73.967941
+Department of Disaster Prevention and Mitigation,Civil Defence Volunteer Training Center,Thailand,"Moo 4, Khao Tha Phra, Mueang Chai Nat, Chai Nat, 17000, Thailand",https://maps.app.goo.gl/2sPYrGRRxGUC93m58,https://promotion.disaster.go.th/promotion/about?id=11053,46.227724,6.141967
 ,,,,,,#NAME?,#NAME?
 ,,,,,,#NAME?,#NAME?
 ,,,,,,#NAME?,#NAME?
