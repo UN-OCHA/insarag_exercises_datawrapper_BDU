@@ -126,3 +126,27 @@ Example: Av. de la Paix 8-14, 1211 Genève, Switzerland
 The first time the script runs, Google will ask for permission. This only needs to be approved once.
 Google applies limits on how many addresses can be processed in a given period. For large updates, some addresses may be processed during the next hourly run.
 If you want to make the latitude and longitude permanent, copy those columns and use Paste special → Values only. This prevents them from being recalculated later.
+
+## In a nutshell: How it works
+
+* Google Sheet used as the master database, edited by INSARAG and UNDAC colleagues.
+
+* Addresses are entered in Column D (Address).
+
+* A Google Sheets Apps Script converts addresses from Column D into coordinates.
+
+* Latitude is written to Column H and longitude to Column I.
+
+* If the automatically generated latitude or longitude is incorrect, values in Columns H and I can be edited manually.
+
+* The Apps Script runs automatically every hour via a time-based trigger in Google Sheets.
+
+* The Google Sheet is published as a CSV file.
+
+* A GitHub Actions workflow pulls the CSV from Google Sheets and stores it in this repository.
+
+* CSV is used because Datawrapper can read and refresh data directly from a CSV URL.
+
+* Datawrapper reads the CSV from this GitHub repository to update the map automatically.
+
+* The Datawrapper map can be viewed, embedded on websites, and downloaded as PNG or SVG.
