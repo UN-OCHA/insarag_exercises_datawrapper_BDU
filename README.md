@@ -123,7 +123,6 @@ Example: Av. de la Paix 8-14, 1211 Genève, Switzerland
 ```
 
 ## Notes
-
-- First-time users must authorize the script.
-- Quotas apply (Apps Script Maps service).
-- After filling latitude and longitude, use Paste special → Values to freeze results.
+The first time the script runs, Google will ask for permission. This only needs to be approved once.
+Google applies limits on how many addresses can be processed in a given period. For large updates, some addresses may be processed during the next hourly run.
+If you want to make the latitude and longitude permanent, copy those columns and use Paste special → Values only. This prevents them from being recalculated later.
