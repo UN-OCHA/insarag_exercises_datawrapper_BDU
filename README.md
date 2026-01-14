@@ -141,12 +141,8 @@ If you want to make the latitude and longitude permanent, copy those columns and
 
 * The Apps Script runs automatically every hour via a time-based trigger in Google Sheets.
 
-* The Google Sheet is published as a CSV file.
+* The Google Sheet is published as a CSV file using a GitHub Actions workflow that runs every hour.
 
-* A GitHub Actions workflow pulls the CSV from Google Sheets and stores it in this repository.
-
-* CSV is used because Datawrapper can read and refresh data directly from a CSV URL.
-
-* Datawrapper reads the CSV from this GitHub repository to update the map automatically.
+* CSV is used so Datawrapper can read and refresh data automatically (doesn't do automatic updates from Google Sheet).
 
 * The Datawrapper map can be viewed, embedded on websites, and downloaded as PNG or SVG.
