@@ -129,7 +129,7 @@ If you want to make the latitude and longitude permanent, copy those columns and
 
 ## In a nutshell: How it works
 
-* Google Sheet used as the master database, edited by INSARAG and UNDAC colleagues.
+* Google Sheet used as the master database, edited by UNDAC colleagues.
 
 * Addresses are entered in Column D (Address).
 
