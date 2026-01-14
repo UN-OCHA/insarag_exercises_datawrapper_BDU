@@ -32,50 +32,44 @@ Purpose: Convert addresses in Column D into latitude (G) and longitude (H) using
 ## Script used
 
 ```javascript
-
-// --- CONFIG ---
-const SHEET_NAME = 'USAR_data'; // <-- your tab name
-const DECIMALS = 6;             // round lat/lon to 6 decimals
-// --- END CONFIG ---
+const SHEET_NAME = 'USAR_data';
+const DECIMALS = 6;
 
 function bakeLatLon() {
-  var ss = SpreadsheetApp.getActiveSpreadsheet();
-  var sheet = ss.getSheetByName(SHEET_NAME);
-  if (!sheet) return;
-
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(SHEET_NAME);
   var lastRow = sheet.getLastRow();
   if (lastRow < 2) return;
 
-  var addrRange = sheet.getRange(2, 4, lastRow - 1, 1); // D2:D (Address)
-  var latRange  = sheet.getRange(2, 7, lastRow - 1, 1); // G2:G (Lat)
-  var lonRange  = sheet.getRange(2, 8, lastRow - 1, 1); // H2:H (Lon)
+  var addrRange = sheet.getRange(2, 4, lastRow - 1, 1); // D2:D
+  var latRange  = sheet.getRange(2, 8, lastRow - 1, 1); // H2:H
+  var lonRange  = sheet.getRange(2, 9, lastRow - 1, 1); // I2:I
 
   var addresses = addrRange.getValues();
   var lats = latRange.getValues();
   var lons = lonRange.getValues();
-
   var cache = {};
+  var updated = 0;
+
   for (var i = 0; i < addresses.length; i++) {
     var addr = (addresses[i][0] || '').toString().trim();
     if (!addr) continue;
 
-    // Skip rows where lat & lon are already numeric values
-    var hasLat = typeof lats[i][0] === 'number';
-    var hasLon = typeof lons[i][0] === 'number';
+    var hasLat = lats[i][0] !== '' && lats[i][0] != null;
+    var hasLon = lons[i][0] !== '' && lons[i][0] != null;
     if (hasLat && hasLon) continue;
 
-    // Geocode and write numeric values (no formulas)
     var coords = cache[addr] || geocodeAddress_(addr);
     cache[addr] = coords;
 
     if (coords && coords.lat != null && coords.lng != null) {
       lats[i][0] = Number(coords.lat.toFixed(DECIMALS));
       lons[i][0] = Number(coords.lng.toFixed(DECIMALS));
+      updated++;
     }
-    Utilities.sleep(120); // gentle pacing
+
+    Utilities.sleep(120);
   }
 
-  // Write back values
   latRange.setValues(lats);
   lonRange.setValues(lons);
 }
@@ -90,6 +84,7 @@ function geocodeAddress_(address) {
   } catch (e) {}
   return { lat: null, lng: null };
 }
+
 ```
 
 I added an hourly trigger in the Google Sheet so the script automatically recalculates the latitude and longitude values. This ensures that any newly added or updated addresses in column D are processed without requiring manual action. The trigger runs the geocoding function in the background once per hour, keeping the dataset up to date for export and use in Datawrapper.
@@ -97,14 +92,14 @@ I added an hourly trigger in the Google Sheet so the script automatically recalc
 ## How to use
 
 Address column: D  
-Latitude column: G  
-Longitude column: H  
+Latitude column: H  
+Longitude column: I  
 
 Formulas:
 
 ```
-=INDEX(GEOCODE(D2),1)   // G2 latitude
-=INDEX(GEOCODE(D2),2)   // H2 longitude
+=INDEX(GEOCODE(D2),1)   // H2 latitude
+=INDEX(GEOCODE(D2),2)   // I2 longitude
 ```
 
 Drag down for all rows.
