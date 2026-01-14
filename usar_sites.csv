@@ -1,18 +1,18 @@
 organization,exercise name,country,address,google maps link,more info,more info link,lat,lon
-,Place d'armes de Genève,Switzerland,"Chemin de Couchefatte, 42, 1237, Avully, Switzerland",https://maps.app.goo.gl/oPoFWjSG63qTvoQ89,Example of more info. Contact person. Focal point.,,46.161867,5.979705
-Abu Dhabi Civil Defense Authority,Al Shelaylah Training Site,Al Shelaylah Fire Station/ Abu Dhabi City,"JMJ7+HV5, Al Sader, Abu Dhabi, United Arab Emirates",Al Shelaylah Civil Defense Fire Station - Google Maps,,,24.631387,54.664734
-Pompiers de l'Urgence Internationale (PUI),La Souterraine,France,"Avenue Mermoz, 4,  23300 La Souterraine, France",https://maps.app.goo.gl/ytskXTt9rxdgwK8y8,,,46.242818,1.48921
-Emergency Services Academy,USAR Rubble Pad,Pakistan,"0.5 km M2 Motorway Service lane, Thokar Niaz Baig , Lahore, Pakistan",https://maps.app.goo.gl/AjdknkU9nzhnJp7C8,,,31.494134,74.234164
-Singapore Civil Defence Force (SCDF),Home Team Tactical Centre (HTTC),Singapore,"Mandai Quarry Road, 1, 728635, Singapore ",https://maps.app.goo.gl/XcYs45g9adtZyDL6A,,,1.406318,103.762512
+,Place d'armes de Genève,Switzerland,"Chemin de Couchefatte, 42, 1237, Avully, Switzerland",https://maps.app.goo.gl/oPoFWjSG63qTvoQ89,Example of more info. Contact person. Focal point.,https://www.unocha.org/,46.161867,5.979705
+Abu Dhabi Civil Defense Authority,Al Shelaylah Training Site,Al Shelaylah Fire Station/ Abu Dhabi City,"JMJ7+HV5, Al Sader, Abu Dhabi, United Arab Emirates",Al Shelaylah Civil Defense Fire Station - Google Maps,,https://www.unocha.org/,24.631387,54.664734
+Pompiers de l'Urgence Internationale (PUI),La Souterraine,France,"Avenue Mermoz, 4,  23300 La Souterraine, France",https://maps.app.goo.gl/ytskXTt9rxdgwK8y8,,https://www.unocha.org/,46.242818,1.48921
+Emergency Services Academy,USAR Rubble Pad,Pakistan,"0.5 km M2 Motorway Service lane, Thokar Niaz Baig , Lahore, Pakistan",https://maps.app.goo.gl/AjdknkU9nzhnJp7C8,,https://www.unocha.org/,31.494134,74.234164
+Singapore Civil Defence Force (SCDF),Home Team Tactical Centre (HTTC),Singapore,"Mandai Quarry Road, 1, 728635, Singapore ",https://maps.app.goo.gl/XcYs45g9adtZyDL6A,,https://www.unocha.org/,1.406318,103.762512
 National Fire Agency of the Republic of Korea,National Rescue headquarters,South Korea,"Gujiseo-ro,1, Guji-myeon, Dalseong-gun, Daegu, South Korea","
-https://maps.app.goo.gl/TvhdY3HaUpJgdik29",,,35.662905,128.386877
-"Capital Emergency Service, Cpital Development Authority , Islamabad",CDA Emergency & Disaster Management Academy and USAR rubble field,Pakistan,"M258+C5G, H-11, Islamabad, Pakistan",https://share.google/tGw8JXaJPFDtjIC10,,,33.658563,73.015453
-Capita The Fire Service College,Capita The Fire Service College,United Kingdom,"London Road, Gloucestershire, GL56 0RH, Moreton-in-Marsh, UK",https://maps.app.goo.gl/xEwEkjTSFiBe5vev8,,,51.992173,-1.674685
-TCRH Training Center Retten und Helfen GmH,TCRH Training Center Rescue & Help,Germany,"Luttenbachtalstraße 30, 74821 Mosbach, Germany",https://goo.gl/maps/92zGyog5As9Ltxsz7,,,49.336861,9.143847
-General Inspectorate for Emergency Situations,The training ground for executing life-saving intervention techniques in hostile environments,Romania,"București-Ploiești Street, D.N. 1, Km. 32, Ciolpani,  Bucharest, Romania",https://maps.app.goo.gl/tnv7yaRS1QRQrkUC7,,,44.487121,26.077964
-BRH Bundesverband Rettungshunde e.V.,TCRH Malchin,Germany,"Industriegelände 10, Mecklenburg-Vorpommern, 17139 Malchin, Germany, ",https://maps.app.goo.gl/dJxgUDK4wLLnZh646,,,53.747121,12.773786
-Fire and Rescue New South Wales,USAR Prop,Australia,"Distribution Drive Orchard Hills, 1-5, NSW 2748, Sydney Australia",https://goo.gl/maps/mFqZcZTsx662,,,-33.823151,150.773746
-Cynotechnie Sapeur - Pompier France,Aire de formation internationale Cynotechnique et Sauvetage Déblaiement,France,"Chemin des Bas Villevents, VILLEJUST,  FRANCE",https://maps.app.goo.gl/bHySLnowecnw7beB6,,,48.674488,2.233034
+https://maps.app.goo.gl/TvhdY3HaUpJgdik29",,https://www.unocha.org/,35.662905,128.386877
+"Capital Emergency Service, Cpital Development Authority , Islamabad",CDA Emergency & Disaster Management Academy and USAR rubble field,Pakistan,"M258+C5G, H-11, Islamabad, Pakistan",https://share.google/tGw8JXaJPFDtjIC10,,https://www.unocha.org/,33.658563,73.015453
+Capita The Fire Service College,Capita The Fire Service College,United Kingdom,"London Road, Gloucestershire, GL56 0RH, Moreton-in-Marsh, UK",https://maps.app.goo.gl/xEwEkjTSFiBe5vev8,,https://www.unocha.org/,51.992173,-1.674685
+TCRH Training Center Retten und Helfen GmH,TCRH Training Center Rescue & Help,Germany,"Luttenbachtalstraße 30, 74821 Mosbach, Germany",https://goo.gl/maps/92zGyog5As9Ltxsz7,,https://www.unocha.org/,49.336861,9.143847
+General Inspectorate for Emergency Situations,The training ground for executing life-saving intervention techniques in hostile environments,Romania,"București-Ploiești Street, D.N. 1, Km. 32, Ciolpani,  Bucharest, Romania",https://maps.app.goo.gl/tnv7yaRS1QRQrkUC7,,https://www.unocha.org/,44.487121,26.077964
+BRH Bundesverband Rettungshunde e.V.,TCRH Malchin,Germany,"Industriegelände 10, Mecklenburg-Vorpommern, 17139 Malchin, Germany, ",https://maps.app.goo.gl/dJxgUDK4wLLnZh646,,https://www.unocha.org/,53.747121,12.773786
+Fire and Rescue New South Wales,USAR Prop,Australia,"Distribution Drive Orchard Hills, 1-5, NSW 2748, Sydney Australia",https://goo.gl/maps/mFqZcZTsx662,,https://www.unocha.org/,-33.823151,150.773746
+Cynotechnie Sapeur - Pompier France,Aire de formation internationale Cynotechnique et Sauvetage Déblaiement,France,"Chemin des Bas Villevents, VILLEJUST,  FRANCE",https://maps.app.goo.gl/bHySLnowecnw7beB6,,https://www.unocha.org/,48.674488,2.233034
 Department of Disaster Prevention and Mitigation,Civil Defence Volunteer Training Center,Thailand,"Moo, 4, Khao Tha Phra, Mueang Chai Nat, Chai Nat, 17000, Thailand",https://maps.app.goo.gl/2sPYrGRRxGUC93m58,,,15.180746,100.119057
 ,,,,,,,#NAME?,#NAME?
 ,,,,,,,#NAME?,#NAME?
