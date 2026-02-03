@@ -23,75 +23,126 @@ Brand and Design Unit (BDU)
 ochavisual@un.org
 
 
----
-Geocoding in Google Sheets
+--------
 
-**Purpose:** Convert addresses in **Column D** into **latitude (G)** and **longitude (H)** using a custom Apps Script function.
+# Geocoding in Google Sheets
 
----
+Purpose: Convert addresses in Column D into latitude (G) and longitude (H) using a custom Apps Script function.
 
-## ✅ Script Used
+## Script used
 
 ```javascript
-/**
- * GEOCODE: Converts an address into [latitude, longitude].
- * Usage:
- *   =INDEX(GEOCODE(D2),1)   // latitude
- *   =INDEX(GEOCODE(D2),2)   // longitude
- */
-function GEOCODE(address) {
-  if (!address) return ["",""];
+const SHEET_NAME = 'USAR_data';
+const DECIMALS = 6;
+
+function bakeLatLon() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(SHEET_NAME);
+  var lastRow = sheet.getLastRow();
+  if (lastRow < 2) return;
+
+  var addrRange = sheet.getRange(2, 4, lastRow - 1, 1); // D2:D
+  var latRange  = sheet.getRange(2, 8, lastRow - 1, 1); // H2:H
+  var lonRange  = sheet.getRange(2, 9, lastRow - 1, 1); // I2:I
+
+  var addresses = addrRange.getValues();
+  var lats = latRange.getValues();
+  var lons = lonRange.getValues();
+  var cache = {};
+  var updated = 0;
+
+  for (var i = 0; i < addresses.length; i++) {
+    var addr = (addresses[i][0] || '').toString().trim();
+    if (!addr) continue;
+
+    var hasLat = lats[i][0] !== '' && lats[i][0] != null;
+    var hasLon = lons[i][0] !== '' && lons[i][0] != null;
+    if (hasLat && hasLon) continue;
+
+    var coords = cache[addr] || geocodeAddress_(addr);
+    cache[addr] = coords;
+
+    if (coords && coords.lat != null && coords.lng != null) {
+      lats[i][0] = Number(coords.lat.toFixed(DECIMALS));
+      lons[i][0] = Number(coords.lng.toFixed(DECIMALS));
+      updated++;
+    }
+
+    Utilities.sleep(120);
+  }
+
+  latRange.setValues(lats);
+  lonRange.setValues(lons);
+}
+
+function geocodeAddress_(address) {
   try {
     var res = Maps.newGeocoder().setLanguage('en').geocode(address);
     if (res && res.status === 'OK' && res.results && res.results.length > 0) {
       var loc = res.results[0].geometry.location;
-      return [loc.lat, loc.lng]; // vertical array
+      return { lat: loc.lat, lng: loc.lng };
     }
-    return ["",""];
-  } catch (e) {
-    return ["",""];
-  }
+  } catch (e) {}
+  return { lat: null, lng: null };
 }
+
 ```
 
----
+I added an hourly trigger in the Google Sheet so the script automatically recalculates the latitude and longitude values. This ensures that any newly added or updated addresses in column D are processed without requiring manual action. The trigger runs the geocoding function in the background once per hour, keeping the dataset up to date for export and use in Datawrapper.
 
-## ✅ How to Use
+## How to use
 
-- **Address column:** `D`
-- **Latitude column:** `G`
-- **Longitude column:** `H`
+Address column: D  
+Latitude column: H  
+Longitude column: I  
 
 Formulas:
-```gs
-=INDEX(GEOCODE(D2),1)   // in G2
-=INDEX(GEOCODE(D2),2)   // in H2
+
 ```
+=INDEX(GEOCODE(D2),1)   // H2 latitude
+=INDEX(GEOCODE(D2),2)   // I2 longitude
+```
+
 Drag down for all rows.
 
----
-
-## ✅ Address Format
+## Address format
 
 Include:
-- Street + number
+- Street and number
 - Postal code
 - City
 - Country
 
-**Example:**  
-`Av. de la Paix 8-14, 1211 Genève, Switzerland`
+Example:  
+Av. de la Paix 8-14, 1211 Genève, Switzerland
 
-Add a **comment on D1**:
+Comment to add in D1:
+
 ```
 Please enter full address: street + number, postal code, city, country.
 Example: Av. de la Paix 8-14, 1211 Genève, Switzerland
 ```
 
----
+## Notes
+The first time the script runs, Google will ask for permission. This only needs to be approved once.
+Google applies limits on how many addresses can be processed in a given period. For large updates, some addresses may be processed during the next hourly run.
+If you want to make the latitude and longitude permanent, copy those columns and use Paste special → Values only. This prevents them from being recalculated later.
 
-## ✅ Notes
+## In a nutshell: How it works
 
-- First-time users must **authorize** the script.
-- Quotas apply (Apps Script Maps service).
-- After filling lat/lon, use **Paste special → Values** to freeze results.
+* Google Sheet used as the master database, edited by UNDAC colleagues.
+
+* Addresses are entered in Column D (Address).
+
+* A Google Sheets Apps Script converts addresses from Column D into coordinates.
+
+* Latitude is written to Column H and longitude to Column I.
+
+* If the automatically generated latitude or longitude is incorrect, values in Columns H and I can be edited manually.
+
+* The Apps Script runs automatically every hour via a time-based trigger in Google Sheets.
+
+* The Google Sheet is published as a CSV file using a GitHub Actions workflow that runs every hour.
+
+* CSV is used so Datawrapper can read and refresh data automatically (doesn't do automatic updates from Google Sheet).
+
+* The Datawrapper map can be viewed, embedded on websites, and downloaded as PNG or SVG.
