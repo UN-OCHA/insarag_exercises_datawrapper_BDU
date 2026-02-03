@@ -2,7 +2,7 @@
 
 This repository is maintained by OCHA’s Brand and Design Unit (BDU) to support the INSARAG team with an up-to-date dataset of global USAR exercise sites.
 
-A GitHub Actions workflow automatically syncs the master Google Sheet into the `usar_sites.csv` file. This CSV is served directly to Datawrapper, ensuring the INSARAG map always reflects the latest updates entered by the team.
+A GitHub Actions workflow automatically syncs the master Google Sheet into the `usar_sites.csv` file three times per day (06:00, 14:00, 22:00 UTC). This CSV is served directly to Datawrapper, ensuring the INSARAG map always reflects the latest updates entered by the team.
 
 ## Purpose
 Provide a clean and continuously updated data source for the INSARAG USAR exercise sites map and other related visualization products.
