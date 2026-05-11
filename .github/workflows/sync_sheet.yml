@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4  # v3 used Node.js 20, deprecated June 2026
 
       - name: Download Google Sheet CSV
         run: curl -L "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ3qu-vdiZb7UWiI6MhgWBaWkkk431aRAzZ0CEcF5l3Djr650WYDn7k096xLjFfwGobrzzARlEBMlnU/pub?output=csv" -o usar_sites.csv
